@@ -1,0 +1,47 @@
+.inputBox {
+    margin: 30px 30px;
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+input {
+    height: 1rem;
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 5px;
+    width: 240px;
+    color: #000;
+}
+
+input:focus{
+    background-color: #ccc;
+    border-radius: 5px;
+}
+input:focus ~ .line {
+    display: none;
+}
+
+.line{
+    transform: translateY(-30px);
+    border-bottom: 2px solid #ccc;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
